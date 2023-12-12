@@ -1,0 +1,133 @@
+@charset "utf-8";
+#body-container{
+    padding-top: 100px;
+}
+h2{
+    width:100%;
+    max-width: 1280px;
+    text-align: center;
+    margin:auto;
+    padding:20px 0;
+}
+.roomda-slide-g{
+    width:100%;
+    position:relative;
+    overflow: hidden;
+}
+.roomda-slides{
+    width:300%;
+    position:relative;
+    display: flex;
+    
+}
+.roomda-slide{
+    width:33.33%;
+    overflow: hidden;
+}
+.roomda-slide img{
+   width:100%;
+   align-self: center;
+}
+.roomda-slide-g button{
+    display: none;
+}
+
+.pagenation{
+    width:100%;
+    display:flex;
+    justify-content: flex-end;
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    padding:30px 50px;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    text-indent: -999999px;
+    background-color: white;
+    border-radius: 10px;
+}
+.dot.active{
+    width:30px;
+}
+.roomda-explanation{
+    width:90%;
+    max-width: 1280px;
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px solid #aaa;
+    padding:30px 0;
+}
+.roomda-ex-area{
+    width:90%;
+    margin: auto;
+    border-bottom: 1px solid #aaa;
+    max-width: 1280px;
+    padding:10px 0;
+}
+h4{
+    width:100%;
+    padding:0 5px;  
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.roomda-ex-g{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.little-ex{
+    width:50%;
+    padding:10px;
+}
+h5{
+    width:100%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 5px 0;
+}
+.little-p{
+    width:100%;
+}
+
+@media screen and (min-width:860px){
+    .roomda-slide-g{
+        height: 650px;
+    }
+    .roomda-slide-g button{
+        width:30px;
+        height: 30px;
+        position:absolute;
+        top:50%;
+        left: 20px;
+        transform: translate(0,-50%);
+        color: white;
+        background-color: transparent;
+        font-size: 50px;
+        display: flex;
+        align-items: center;
+        border:none;
+    }
+    .roomda-nbt{
+        left: inherit !important;
+        right: 20px !important;    
+    }
+    
+    .roomda-ex-area{
+        display:flex;
+        justify-content: flex-start;
+    }
+    h4{
+        width:30%;
+    }
+    .roomda-ex-g{
+        width:70%;
+        justify-content: flex-start;
+    }
+    .little-ex{
+        width:32%;
+    }
+}
+

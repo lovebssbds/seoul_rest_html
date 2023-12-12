@@ -1,0 +1,103 @@
+@charset "utf-8";
+#body-container{
+    padding-top: 100px;
+}
+.room-modal-g{
+    display: none;
+}
+main{
+    width:100%;
+    max-width: 1280px;
+    margin: auto;
+}
+h2{
+    margin: 10px;
+}
+main>p{
+    margin-left: 10px;
+    margin-bottom:20px;
+}
+.rooms{
+    width:100%;
+}
+.room{
+    width:100%;
+    padding: 20px;
+    max-width: 750px;
+}
+.room:nth-child(odd){
+    background-color: #eee;
+    color: black;
+}
+.room-slg{
+    width:100%;
+    position:relative;
+    overflow: hidden;
+}
+.room-sls{
+    width:400%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+}
+.room-sl{
+    width:25%;  
+    overflow: hidden;
+}
+.room-sl a{
+    width:100%;
+}
+.room-sl a img{
+    width:100%;
+}
+.rslbt{
+    width: 50px;
+    height: 50px;
+    position:absolute;
+    top:50%;
+    left:5px;
+    transform: translate(0,-50%);
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 5px;
+    color: white;
+    font-stretch: ultra-condensed;
+    /* text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black; */
+    border: none;
+
+}
+.nbt{
+    left: inherit;
+    right: 5px;
+}
+.room-t{
+    width:100%;
+    padding:5px;
+    border-bottom: 1px solid #333;
+}
+h4{
+    margin: 5px;
+    margin-left: 0;
+}
+.room-explain{
+    padding: 5px;
+}
+.room-explain p{
+    line-height: 165%;
+}
+.room-explain span{
+    font-weight: 700;
+}
+@media screen and (min-width:800px) {
+    .rooms{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 2%;
+    }
+    .room{
+        width:32%;
+    }
+}
+

@@ -1,0 +1,129 @@
+@charset "utf-8";
+#body-container{
+    padding-top: 100px;
+}
+.aboutsr{
+    width:100%;
+    max-width: 1280px;
+    margin: auto;
+    border:1px solid black;
+    padding:10px;
+}
+.aboutsr-img{
+    width:100%;
+    height: 600px;
+    max-width: 500px;
+    border:1px solid black;
+    background: url(../images/info-main.jpg) no-repeat center;
+    background-size: cover;
+    text-indent: -99999px;
+    border-radius: 30px;
+}
+.aboutsr-text{
+    width: 100%;
+    max-width: 500px;
+    border:1px solid black;
+    padding:10px;
+}
+.location-g{
+    width: 100%;
+    max-width:1024px;
+    margin: auto;
+    padding:10px;
+}
+.location{
+    width: 100%;
+    margin: auto;
+    border:1px solid black;
+}
+.ways{
+    width:100%;
+    max-width: 500px;
+    border:1px solid black;
+    padding:10px;
+}
+.map{
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    border:1px solid black;
+}
+.sights-g{
+    width:100%;
+    max-width: 1024px;
+    margin: auto; 
+    padding:10px;
+}
+.sights-g>h2{
+    border:1px solid black;
+    text-align: center;
+    padding:20px;
+}
+.sights-info{
+    width:100%;
+    margin: auto;
+    /* border:1px solid black; */
+    padding:10px;
+}
+.links{
+    width:100%;
+    max-width: 640px;
+    /* border:1px solid black; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sights{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sights a{
+    display: block;
+    width: 90px;
+    height:90px;
+    border-radius: 100px;
+    overflow: hidden;
+    margin: 10px;
+}
+.sights img{
+    width:100%;
+}
+.sights p{
+    font-size: 1rem;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    transform: translateY(-5px);
+    /* border: 1px solid black; */
+}
+.sights-info2 .sights:first-child p{
+    transform: translateY(-16px);
+}
+.sights p span{
+    width:250px;
+    font-size: 1.1rem;
+    border-bottom: 2px dashed #333;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+@media screen and (min-width:768px){
+    .sights-info{
+        display: flex;
+        justify-content: space-around;
+       }
+}
+
+@media screen and (min-width:1024px){
+   .aboutsr{
+    display: flex;
+    justify-content: space-around;
+   }
+   .location{
+    display: flex;
+    justify-content: space-around;
+   }
+   
+}
