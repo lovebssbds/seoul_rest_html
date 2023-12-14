@@ -66,6 +66,22 @@ h2{
     max-width: 1280px;
     padding:10px 0;
 }
+.roomda-ex-area div{
+    padding:5px;
+}
+
+.roomda-ex-area:nth-child(5)>div>div{
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding:5px 0;
+    
+}
+.roomda-ex-area:nth-child(6) ul{
+    padding: 5px;
+}
+.roomda-ex-area:nth-child(6) ul li{
+    list-style-type: none;
+}
 h4{
     width:100%;
     padding:0 5px;  
@@ -125,9 +141,17 @@ h5{
     .roomda-ex-g{
         width:70%;
         justify-content: flex-start;
+        /* border:1px solid black; */
     }
     .little-ex{
         width:32%;
+    }
+    .roomda-ex-area:nth-child(5){
+        display: flex;
+        justify-content: space-around;
+    }
+    .roomda-ex-area:nth-child(5)>div{
+        width:23.33%;
     }
 }
 

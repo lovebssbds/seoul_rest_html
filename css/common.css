@@ -758,7 +758,7 @@ footer{
         font-size: 16px;
     }
     header{
-        background-color:#f6ddd0;
+        background-color:rgba(255,255,255,0.5);
         position:fixed;
         z-index: 999;
         transition:0.5s;
@@ -810,15 +810,21 @@ footer{
         top: 73px;
         width:100%;
         height: 210px;
-        background-color:#caa38e;
+        background-color:transparent;
         z-index: 99;
         display:none;
     }
+    .drop-down a{
+        font-weight: 550;
+    }
     .drop-down a:hover{
         background-color: #9b6b43;
+        color:white;
+        border-radius: 15px;
+
     }
     .drop-down a{
-        color:#333333;
+        color:white;
         display:block;
         text-align: center;
         padding: 10px 5px;
@@ -839,13 +845,13 @@ footer{
         color: white;
     }
     .full-back{
-        background-color: #caa38e;
+        background-color: rgba(0,0,0,0.25);
         width:100%;
         position:absolute;
         left:0;
         top: 73px;
         height: 210px;
-        z-index: 98;
+        z-index: 73;
         display: none;
     }
     /* ******************콘텐트******************************************** */

@@ -27,9 +27,11 @@ $(document).ready(function(){
 
     $("#desk-nav").mouseenter(function(){
         $(".drop-down").stop().slideDown();
+        $(".full-back").stop().slideDown();
     })
     $("#desk-nav").mouseleave(function(){
         $(".drop-down").stop().slideUp();
+        $(".full-back").stop().slideUp();
     })
    /*  $(".first").each(function(index){
     $(this).children("a").mouseenter(function(){
