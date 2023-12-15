@@ -58,6 +58,7 @@ h2{
     text-align: center;
     border-bottom: 1px solid #aaa;
     padding:30px 0;
+    font-size: 0.9rem;
 }
 .roomda-ex-area{
     width:90%;
@@ -107,7 +108,11 @@ h5{
 .little-p{
     width:100%;
 }
-
+@media screen and (min-width:550px){
+    .roomda-explanation{
+        font-size: 1rem;
+    }
+}
 @media screen and (min-width:860px){
     .roomda-slide-g{
         height: 650px;

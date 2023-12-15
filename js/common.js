@@ -57,6 +57,22 @@ $(document).ready(function(){
         })
     }) */
 
+    var $iniScroll=$(window).scrollTop();
+    var $scrollNow=null;
 
+    $(window).scroll(function(){
+        $scrollNow=$(window).scrollTop();
+        if($iniScroll<$scrollNow && $(window).width()>=1024){
+            $("header").addClass("active");
+        }else{
+            $("header").removeClass("active");
+            if($scrollNow>0){
+                $("header").css({"background-color":"white"})
+            }else{
+                $("header").css({"background-color":"rgba(255,255,255,0.25"})
+            }      
+        }
 
+        $iniScroll=$scrollNow;
+    })
 })

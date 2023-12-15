@@ -2,3 +2,46 @@
 #body-container{
     padding-top: 150px;
 }
+.kc,
+.lr{
+    width:100%;
+    max-width: 1280px;
+    margin:auto;
+}
+.kc-img
+.lr-img{
+    width:100%;
+}
+.kc-img img,
+.lr-img img{
+    width:100%
+}
+.kc-contents{
+    width:100%;
+}
+h4{
+    width:100%;
+}
+.services{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 2%;
+}
+.service{
+    width:48%;
+}
+.more-info{
+    width:100%;
+    max-width: 1280px;
+    margin: auto;
+}
+.more-info-title{
+    width:100%;
+}
+.more-info ul{
+    width:100%;
+}
+.more-info ul li{
+    width:100%;
+}

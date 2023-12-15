@@ -866,7 +866,9 @@ footer{
 
     }
     .swiper-slide picture{
-        width: 100%;
+        width:100%;
+        overflow: hidden;
+
 
     }    
     .swiper-slide source,

@@ -1,19 +1,7 @@
 $(function(){
 
     //데스크탑 헤더 스크롤다운때 감추기
-    var $iniScroll=$(window).scrollTop();
-    var $scrollNow=null;
-
-    $(window).scroll(function(){
-        $scrollNow=$(window).scrollTop();
-        if($iniScroll<$scrollNow && $(window).width()>=1024){
-            $("header").addClass("active");
-        }else{
-            $("header").removeClass("active");      
-        }
-
-        $iniScroll=$scrollNow;
-    })
+   
 
     //높이변수를 여러개 만들어서 효과를 넣어보자 일괄로 하면 조정이 어려움
     //스크롤효과 시작
@@ -87,7 +75,7 @@ $(function(){
     
             clearInterval(timeCount);
     
-            if($time>5){
+            if($time>10){
                 $("a").click(function(e){ e.preventDefault(); })
             }else{
                 $("a").click(function(){
