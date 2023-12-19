@@ -7,6 +7,11 @@ $(function(){
     var slidePosition=0;
     $auto=null;
 
+    function init(){
+       $roomSls.css({left:-0})
+       $swidth=$(".roomda-slide-g").width();
+    }
+
     function slideEvent(){
         function slideMove(){
             $roomSls.stop().animate({
@@ -38,4 +43,8 @@ $(function(){
         })
     }
     slideEvent();
+
+    $(window).resize(function(){
+        init();
+    })
 })

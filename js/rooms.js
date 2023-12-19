@@ -1,54 +1,16 @@
 $(function(){
-    //일일히 슬라이드 써내려가자....ㅜㅜ.....
-    /* var $roomSls=$(".room-sls");
-    var $roomSl=$roomSls.children(".room-sl")
-    var slideLength=$roomSl.length/$(".room").length
-    var $swidth=$(".room-slg").width();
+    var $roomSls=$(".roomda-sls");
+    var $roomSl=$roomSls.children(".roomda-sl")
+    var slideLength=$roomSl.length
+    var $swidth=$(".roomda-slg").width();
     var $wrapWidth=$swidth*slideLength;
     var slidePosition=0;
     $auto=null;
 
-    function slideEvent(){
-        for(i=0;i<$(".room").length;i++)
-        function slideMove(){
-            $(".room-slg").eq(i).find(".room-sls").stop().animate({
-                left:-$swidth*slidePosition,
-            })
-            
-        }
-        function nextPlay(){
-            if(slidePosition==slideLength-1){
-                slidePosition=0;
-            }else{
-                slidePosition++;
-            }
-            slideMove();
-        }
-        $(".nbt").eq(i).click(function(){
-            
-            $(".room-slg").eq(i).find(".room-sls").on(nextPlay())
-        })
-        function prevPlay(){
-            if(slidePosition==0){
-                slidePosition==slideLength-1
-            }else{
-                slidePosition--;
-            }
-        }
-        $(".pbt").click(function(){
-            prevPlay();
-        })
+    function init(){
+        $roomSls.css({left:-0})
+        $swidth=$(".roomda-slg").width();
     }
-    slideEvent(); */
- 
- 
-    var $roomSls=$(".room-sls");
-    var $roomSl=$roomSls.children(".room-sl")
-    var slideLength=$roomSl.length/$(".room").length
-    var $swidth=$(".room-slg").width();
-    var $wrapWidth=$swidth*slideLength;
-    var slidePosition=0;
-    $auto=null;
 
     function slideEvent(){
         function slideMove(){
@@ -65,7 +27,7 @@ $(function(){
             }
             slideMove();
         }
-        $(".nbt").click(function(){
+        $(".roomda-nbt").click(function(){
             
             nextPlay()
         })
@@ -76,13 +38,13 @@ $(function(){
                 slidePosition--;
             }
         }
-        $(".pbt").click(function(){
+        $(".roomda-pbt").click(function(){
             prevPlay();
         })
         function autoPlay(){
             $auto=setInterval(function(){
                 nextPlay();
-            },5000)
+            },8000)
         }
         autoPlay();
         $roomSls.hover(
@@ -96,6 +58,272 @@ $(function(){
     }
     slideEvent();
     
+    $(window).resize(function(){
+        init();
+    })
+
+})
+
+$(function(){
+    var $roomSls=$(".roomdb-sls");
+    var $roomSl=$roomSls.children(".roomdb-sl")
+    var slideLength=$roomSl.length
+    var $swidth=$(".roomdb-slg").width();
+    var $wrapWidth=$swidth*slideLength;
+    var slidePosition=0;
+    $auto=null;
+
+    function init(){
+        $roomSls.css({left:-0})
+        $swidth=$(".roomdb-slg").width();
+    }
+
+    function slideEvent(){
+        function slideMove(){
+            $roomSls.stop().animate({
+                left:-$swidth*slidePosition,
+            })
+            
+        }
+        function nextPlay(){
+            if(slidePosition==slideLength-1){
+                slidePosition=0;
+            }else{
+                slidePosition++;
+            }
+            slideMove();
+        }
+        $(".roomdb-nbt").click(function(){
+            
+            nextPlay()
+        })
+        function prevPlay(){
+            if(slidePosition==0){
+                slidePosition==slideLength-1
+            }else{
+                slidePosition--;
+            }
+        }
+        $(".roomdb-pbt").click(function(){
+            prevPlay();
+        })
+        function autoPlay(){
+            $auto=setInterval(function(){
+                nextPlay();
+            },8000)
+        }
+        autoPlay();
+        $roomSls.hover(
+            function(){
+                clearInterval($auto);
+            },
+            function(){
+                nextPlay();room
+            }
+        )
+    }
+    slideEvent();
     
+    $(window).resize(function(){
+        init();
+    })
+
+})
+
+$(function(){
+    var $roomSls=$(".roomta-sls");
+    var $roomSl=$roomSls.children(".roomta-sl")
+    var slideLength=$roomSl.length
+    var $swidth=$(".roomta-slg").width();
+    var $wrapWidth=$swidth*slideLength;
+    var slidePosition=0;
+    $auto=null;
+
+    function init(){
+        $roomSls.css({left:-0})
+        $swidth=$(".roomta-slg").width();
+    }
+
+    function slideEvent(){
+        function slideMove(){
+            $roomSls.stop().animate({
+                left:-$swidth*slidePosition,
+            })
+            
+        }
+        function nextPlay(){
+            if(slidePosition==slideLength-1){
+                slidePosition=0;
+            }else{
+                slidePosition++;
+            }
+            slideMove();
+        }
+        $(".roomta-nbt").click(function(){
+            
+            nextPlay()
+        })
+        function prevPlay(){
+            if(slidePosition==0){
+                slidePosition==slideLength-1
+            }else{
+                slidePosition--;
+            }
+        }
+        $(".roomta-pbt").click(function(){
+            prevPlay();
+        })
+        function autoPlay(){
+            $auto=setInterval(function(){
+                nextPlay();
+            },8000)
+        }
+        autoPlay();
+        $roomSls.hover(
+            function(){
+                clearInterval($auto);
+            },
+            function(){
+                nextPlay();
+            }
+        )
+    }
+    slideEvent();
+    
+    $(window).resize(function(){
+        init();
+    })
+
+})
+
+$(function(){
+    var $roomSls=$(".roomtb-sls");
+    var $roomSl=$roomSls.children(".roomtb-sl")
+    var slideLength=$roomSl.length
+    var $swidth=$(".roomtb-slg").width();
+    var $wrapWidth=$swidth*slideLength;
+    var slidePosition=0;
+    $auto=null;
+
+    function init(){
+        $roomSls.css({left:-0})
+        $swidth=$(".roomtb-slg").width();
+    }
+
+    function slideEvent(){
+        function slideMove(){
+            $roomSls.stop().animate({
+                left:-$swidth*slidePosition,
+            })
+            
+        }
+        function nextPlay(){
+            if(slidePosition==slideLength-1){
+                slidePosition=0;
+            }else{
+                slidePosition++;
+            }
+            slideMove();
+        }
+        $(".roomtb-nbt").click(function(){
+            
+            nextPlay()
+        })
+        function prevPlay(){
+            if(slidePosition==0){
+                slidePosition==slideLength-1
+            }else{
+                slidePosition--;
+            }
+        }
+        $(".roomtb-pbt").click(function(){
+            prevPlay();
+        })
+        function autoPlay(){
+            $auto=setInterval(function(){
+                nextPlay();
+            },8000)
+        }
+        autoPlay();
+        $roomSls.hover(
+            function(){
+                clearInterval($auto);
+            },
+            function(){
+                nextPlay();
+            }
+        )
+    }
+    slideEvent();
+    
+    $(window).resize(function(){
+        init();
+    })
+
+})
+
+$(function(){
+    var $roomSls=$(".roomwd-sls");
+    var $roomSl=$roomSls.children(".roomwd-sl")
+    var slideLength=$roomSl.length
+    var $swidth=$(".roomwd-slg").width();
+    var $wrapWidth=$swidth*slideLength;
+    var slidePosition=0;
+    $auto=null;
+
+    function init(){
+        $roomSls.css({left:-0})
+        $swidth=$(".roomwd-slg").width();
+    }
+
+    function slideEvent(){
+        function slideMove(){
+            $roomSls.stop().animate({
+                left:-$swidth*slidePosition,
+            })
+            
+        }
+        function nextPlay(){
+            if(slidePosition==slideLength-1){
+                slidePosition=0;
+            }else{
+                slidePosition++;
+            }
+            slideMove();
+        }
+        $(".roomwd-nbt").click(function(){
+            
+            nextPlay()
+        })
+        function prevPlay(){
+            if(slidePosition==0){
+                slidePosition==slideLength-1
+            }else{
+                slidePosition--;
+            }
+        }
+        $(".roomwd-pbt").click(function(){
+            prevPlay();
+        })
+        function autoPlay(){
+            $auto=setInterval(function(){
+                nextPlay();
+            },8000)
+        }
+        autoPlay();
+        $roomSls.hover(
+            function(){
+                clearInterval($auto);
+            },
+            function(){
+                nextPlay();
+            }
+        )
+    }
+    slideEvent();
+    
+    $(window).resize(function(){
+        init();
+    })
 
 })
