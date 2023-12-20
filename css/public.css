@@ -21,15 +21,36 @@
 }
 h4{
     width:100%;
+    margin: 30px 20px 0px;
+    font-size: 1.1rem;
 }
 .services{
     width:100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content:flex-start;
     gap: 10px 2%;
+    padding:20px;
+    border-bottom: 1px solid #ddd;
 }
 .service{
     width:48%;
+    max-width: 200px;
+    
+}
+.service-img{
+    width:100%;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.service-img img{
+    width:100%;
+}
+.service p{
+    width:100%;
+    padding: 5px;
+    text-align: center;
 }
 .more-info{
     width:100%;
