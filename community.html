@@ -15,8 +15,10 @@
         <link rel="shortcut icon" href="./images/seoul_rest_area_favicon_2.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./css/common.css">
+        <link rel="stylesheet" href="./css/community.css">
         <script src="./js/jquery-3.7.1.min.js"></script>
         <script src="./js/common.js"></script>
+        <script src="./js/community.js"></script>
          <!-- Demo styles -->
          <style>
            
@@ -148,78 +150,163 @@
                 </div>
                 <div>
                     <div id="notice">
-                        <table>
+                        <h2>공지사항</h2>
+                        <table class="notice-board">
                             <tr>
-                                <td width="8%">No</td>
-                                <td width="60%">제목</td>
-                                <td width="20%">날짜</td>
-                                <td width="12%">조회수</td>
+                                <td>No</td>
+                                <td>제목</td>
+                                <td>날짜</td>
+                                <td>조회수</td>
                             </tr>
                             <tr>
-                                <td width="8%">10</td>
-                                <td width="60%">크리스마스 이벤트 안내</td>
-                                <td width="20%">2023-12-00</td>
-                                <td width="12%">1</td>
+                                <td>10</td>
+                                <td><a href="chritmas_event.html">크리스마스 이벤트 안내</a></td>
+                                <td>2023-12-00</td>
+                                <td>1</td>
                             </tr>
                             <tr>
-                                <td width="8%">9</td>
-                                <td width="60%">시스템 개선 및 서비스 점검 안내</td>
-                                <td width="20%">2023-12-00</td>
-                                <td width="12%">1</td>
+                                <td>9</td>
+                                <td>시스템 개선 및 서비스 점검 안내</td>
+                                <td>2023-12-00</td>
+                                <td>1</td>
                             </tr>
                             <tr>
-                                <td width="8%">8</td>
-                                <td width="60%">시스템 개선 및 서비스 점검 안내</td>
-                                <td width="20%">2023-12-00</td>
-                                <td width="12%">1</td>
+                                <td>8</td>
+                                <td>시스템 개선 및 서비스 점검 안내</td>
+                                <td>2023-12-00</td>
+                                <td>1</td>
                             </tr>
                             <tr>
-                                <td width="8%">7</td>
-                                <td width="60%">시스템 개선 및 서비스 점검 안내</td>
-                                <td width="20%">2023-12-00</td>
-                                <td width="12%">1</td>
+                                <td>7</td>
+                                <td>시스템 개선 및 서비스 점검 안내</td>
+                                <td>2023-12-00</td>
+                                <td>1</td>
                             </tr>
                             <tr>
-                                <td width="8%">6</td>
-                                <td width="60%">시스템 개선 및 서비스 점검 안내</td>
-                                <td width="20%">2023-12-00</td>
-                                <td width="12%">1</td>
+                                <td>6</td>
+                                <td>시스템 개선 및 서비스 점검 안내</td>
+                                <td>2023-12-00</td>
+                                <td>1</td>
                             </tr>
                             <tr>
-                                <td width="8%">5</td>
-                                <td width="60%">시스템 개선 및 서비스 점검 안내</td>
-                                <td width="20%">2023-12-00</td>
-                                <td width="12%">1</td>
+                                <td>5</td>
+                                <td>시스템 개선 및 서비스 점검 안내</td>
+                                <td>2023-12-00</td>
+                                <td>1</td>
                             </tr>
                             <tr>
-                                <td width="8%">4</td>
-                                <td width="60%">시스템 개선 및 서비스 점검 안내</td>
-                                <td width="20%">2023-12-00</td>
-                                <td width="12%">1</td>
+                                <td>4</td>
+                                <td>시스템 개선 및 서비스 점검 안내</td>
+                                <td>2023-12-00</td>
+                                <td>1</td>
                             </tr>
                             <tr>
-                                <td width="8%">3</td>
-                                <td width="60%">개인정보 처리방침 개정안내</td>
-                                <td width="20%">2023-12-00</td>
-                                <td width="12%">1</td>
+                                <td>3</td>
+                                <td>시스템 개선 및 서비스 점검 안내</td>
+                                <td>2023-12-00</td>
+                                <td>1</td>
                             </tr>
                             <tr>
-                                <td width="8%">2</td>
-                                <td width="60%">시스템 개선 및 서비스 점검 안내</td>
-                                <td width="20%">2023-12-00</td>
-                                <td width="12%">1</td>
+                                <td>2</td>
+                                <td>시스템 개선 및 서비스 점검 안내</td>
+                                <td>2023-12-00</td>
+                                <td>1</td>
                             </tr>
                             <tr>
-                                <td width="8%">1</td>
-                                <td width="60%">홈페이지 이용약관 개정 안내</td>
-                                <td width="20%">2023-12-00</td>
-                                <td width="12%">1</td>
+                                <td>1</td>
+                                <td>시스템 개선 및 서비스 점검 안내</td>
+                                <td>2023-12-00</td>
+                                <td>1</td>
                             </tr>
                         </table>
                     </div>
-                    <div id="qna">묻고답하기내용</div>
-                    <div id="fqa">자주묻는질문 내용</div>
-                    <div id="cs">고객상담</div>
+                    <div id="qna">
+                        <h2>묻고 답하기</h2>
+                        <table class="qna-board">
+                            <tr>
+                                <td>No</td>
+                                <td>제목</td>
+                                <td>날짜</td>
+                                <td>조회수</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>교통정보 문의</td>
+                                <td>2023-12-00</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>예약 시스템 오류 문의</td>
+                                <td>2023-12-00</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>숙소 주변 교통 문의</td>
+                                <td>2023-12-00</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>입금계좌 문의</td>
+                                <td>2023-12-00</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>예약변경 문의</td>
+                                <td>2023-12-00</td>
+                                <td>1</td>
+                            </tr>
+                        </table>
+                        <button>질문하기</button>
+                    </div>
+                    <div id="fqa">
+                        <h2>FQA</h2>
+                        <table class="fqa-board">
+                            <tr>
+                                <td>No</td>
+                                <td>제목</td>
+                                <td>날짜</td>
+                                <td>조회수</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>숙소 이용 관련 연락망입니다.</td>
+                                <td>2023-12-00</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>홈페이지 오류 발생시 안내사항입니다.</td>
+                                <td>2023-12-00</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>숙소 이용 안내입니다.</td>
+                                <td>2023-12-00</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>예약관련 안내입니다.</td>
+                                <td>2023-12-00</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>홈페이지 이용 안내입니다.</td>
+                                <td>2023-12-00</td>
+                                <td>1</td>
+                            </tr>
+                        </table>
+                        
+                    </div>
+                    <div id="cs">
+                        <h2>고객상담</h2>
+                    </div>
 
                 </div>
            </main>
