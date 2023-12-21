@@ -23,10 +23,14 @@ h2{
 .roomda-slide{
     width:33.33%;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 .roomda-slide img{
    width:100%;
-   align-self: center;
+}
+.roomda-slide img:nth-child(2){
+    display: none;
 }
 .roomda-slide-g button{
     display: none;
@@ -114,9 +118,7 @@ h5{
     }
 }
 @media screen and (min-width:860px){
-    .roomda-slide-g{
-        height: 650px;
-    }
+
     .roomda-slide-g button{
         width:30px;
         height: 30px;
@@ -131,6 +133,8 @@ h5{
         align-items: center;
         border:none;
     }
+
+   
     .roomda-nbt{
         left: inherit !important;
         right: 20px !important;    
@@ -159,4 +163,22 @@ h5{
         width:23.33%;
     }
 }
+@media screen and (min-width:1024px){
+
+}
+@media screen and (min-width:1240px){
+    .roomda-slide-g{
+        height: 650px;
+    }
+    .roomda-slide img:first-child{
+        display: none;
+    }
+    .roomda-slide img:nth-child(2){
+        display:block;
+    }
+}
+
+
+
+
 

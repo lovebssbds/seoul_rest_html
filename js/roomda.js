@@ -33,10 +33,11 @@ $(function(){
         })
         function prevPlay(){
             if(slidePosition==0){
-                slidePosition==slideLength-1
+                slidePosition=slideLength-1
             }else{
                 slidePosition--;
             }
+            slideMove();
         }
         $(".roomda-pbt").click(function(){
             prevPlay();

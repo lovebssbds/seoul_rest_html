@@ -1,0 +1,14 @@
+@charset "utf-8";
+#body-container{
+    padding-top: 65px;
+}
+main{
+    width:300px;
+    min-width: 300px;
+    margin:3rem auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
