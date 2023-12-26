@@ -76,3 +76,15 @@ $(document).ready(function(){
         $iniScroll=$scrollNow;
     })
 })
+$(function(){
+    $('.m-open').click(function(){
+        $(document).on('scroll touchmove mousewheel',function(event){
+            event.preventDefault();
+            event.stopPropagation();
+            return false;
+        })
+    })
+    $('.m-close').click(function(){
+        $(document).off('scroll touchmove mousewheel');
+    })
+})
