@@ -5,9 +5,17 @@ $(document).ready(function(){
     // css메서드 태그에 인라인으로 style을 전달
     $(".m-open").click(function(){
         $(".m-content").stop().addClass("active")
+
+        $('html,body').css({
+            overflow:'hidden'
+        })
     })
     $(".m-close").click(function(){
         $(".m-content").stop().removeClass("active")
+
+        $('html,body').css({
+            overflow:'inherit'
+        })
     })
 
     $(".menu-g>a").click(function(){
