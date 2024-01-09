@@ -47,7 +47,7 @@ header{
     height:100%;
     margin:auto;
     display:flex;
-    justify-content: space-between;
+    justify-content:flex-end;
     padding:0 10px;
     align-items:center;
 
@@ -57,7 +57,7 @@ header{
     display:none;
 }
 
-#left-things{
+#right-things{
     width:80px;
     display: flex;
     justify-content: space-between;
@@ -65,11 +65,12 @@ header{
     z-index: 21;
 }
 h1{
-    width: 52px;
+    width: 10vw;
+    max-width: 100px;
     position:fixed;
     top:15px;
-    right: 15px;
-    z-index: 21;
+    left: 1vw;
+    z-index: 999999;
 }
 
 h1 img{
@@ -95,14 +96,14 @@ button.m-open{
     background-color:rgba(0,0,0,0.5);
     position:fixed;
     top:0;
-    left:0;
-    left: -100%; 
+    right:0;
+    right: -100%; 
     transition:0.5s;
     z-index:9999;
 }
 
 .m-content.active{
-    left:0;
+    right:0;
 }
 
 .m-body{
@@ -110,14 +111,16 @@ button.m-open{
     max-width:375px;
     background-color:white;
     height:100%;
+    float: right;
     position: relative;
 }
 .m-close{
     width:30px;
     height:30px;
     font-size:20px;
+    float: right;
     margin-top: 20px;
-    margin-left:20px;
+    margin-right:20px;
     border:none;
     background-color:transparent;
 }
@@ -768,24 +771,23 @@ footer{
     }
     #header-container{
         width:100%;
-        max-width: 1280;
+        max-width: 1280px;
         justify-content: space-around;
     }
-    #left-things{
+    #right-things{
         display: none;
     }
     #desk-nav{
         display:block;
-        width:90%;
+        width:75%;
         /* border:1px solid black; */
         height: 100%;
         display:flex;
         justify-content: space-around;    
     }
     .first{
-        width:180px;
+        width:13vw;
         /* border:1px solid black; */
-        width:90%;
         position:relative;
         display:flex;
         align-items: center;
@@ -830,19 +832,22 @@ footer{
         padding: 10px 5px;
     }
     .d-login-g{
-        width:80px;
+        position:absolute;
         /* border: 1px solid black; */
-        position: absolute;
-        right: 10px;
-        top:80px;
         background-color: #333333;
         color: white;
+        width:12vw;
+        max-width: 130px;
         display: flex;
-        flex-direction: column;
-        z-index: 999;
+        justify-content: center;
+        align-self:center;
+        right: 0;
+        margin-right: 2vw;
+        padding:5px;
     }
     .d-login-g a{
         color: white;
+        font-size: 0.8em;
     }
     .full-back{
         background-color: rgba(0,0,0,0.25);
@@ -995,10 +1000,15 @@ footer{
 }
 /* 최소 1280px */
 @media screen and (min-width:1280px){
-
+    #desk-nav{
+        width:80%;
+    }
 }
 
 /* 최소 1440px */
 @media screen and (min-width:1440px){
+    #desk-nav{
+        width:90%;
+    }
     
 }
