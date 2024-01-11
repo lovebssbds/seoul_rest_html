@@ -33,7 +33,7 @@ table,th,td{
     /* 기본적으로 간격을 갖고 있는 태그(h태그, p태그 등) */
     box-sizing:border-box;
     /* padding에 의해서 밖으로 여백이 만들어지는 것을 안으로 여백 */
-}
+}               
 header{
     width:100%;
     background-color:transparent;
@@ -815,6 +815,10 @@ footer{
         background-color:transparent;
         z-index: 99;
         display:none;
+        padding:10px 0;
+    }
+    .drop-down a{
+        font-weight: 550;
     }
     .drop-down a{
         font-weight: 550;
