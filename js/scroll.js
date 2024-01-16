@@ -76,9 +76,9 @@ $(function(){
             clearInterval(timeCount);
     
             if($time>10){
-                $("a").click(function(e){ e.preventDefault(); })
+                $(".room-sl-g a").click(function(e){ e.preventDefault(); })
             }else{
-                $("a").click(function(){
+                $(".room-sl-g a").click(function(){
                     var $href=$(this).attr("href");
                     window.open($href,"_self");
                 })
